@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins: 400,500,700');
+
+@keyframes heading2color{
+  0%{
+      color:rgb(247, 241, 241);
+      
+  }
+  25%{
+     color:rgb(226, 93, 93);
+  }
+  50%{
+     color:rgb(85, 241, 241);
+  }
+  100%{
+      color:rgb(122, 17, 221);
+  }
+}
+@keyframes heading2paragraphcolor{
+    0%{
+        color:white;
+    }
+    50%{
+        color:rgb(102, 133, 168);
+    }
+    100%{
+        color:white;
+    }
+}
+/*limited reset*/
+html, body, div, section, article, aside, header, 
+hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, 
+blockquote, address, time, span, em, strong, img,
+ ol, ul, li, figure, canvas, video, th, td, tr {
+	margin: 0;
+	padding: 0;
+	vertical-align:baseline;
+}
+
+/*html5 display rule*/
+address, article, aside, canvas, details, figcaption,
+figure, footer, header, hgroup, nav, menu, nav, 
+section, summary {
+	display: block;
+}
+
+html{
+    
+
+    width: 100%;
+    height:100%;
+    background-color: yellow;
+}
+
+body {
+    overflow-x: hidden;
+	height: 100%;
+    width: 100%;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    color: #222;
+    scroll-behavior: smooth;
+}
+
+/*----------------------------------------------------
+                HEADER
+-----------------------------------------------------*/
+header{
+    width: 100%;
+    background: url(../image/header_image.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+
+/*----------------------------------------------------
+                LOGO
+-----------------------------------------------------*/
+
+.navWrap{
+    overflow:auto;
+    padding-top: 30px
+}
+
+.logo{
+    float: left;
+    margin-top:20px;
+    margin-left:5%;  
+    
+}
+
+.logo a{
+    color: rgb(189, 45, 45);
+    text-shadow: 1px 1px 10px black;
+    text-decoration: none;
+}
+
+.logo a:hover{
+    color: rgb(131, 127, 127);
+}
+
+/*----------------------------------------------------
+                NAVBAR
+-----------------------------------------------------*/
+
+#navbar{
+   float:left;
+   margin-left:650px;
+}
+
+#list{
+    list-style-type: none; 
+}
+
+li{
+    float: left;
+    margin:20px;
+    margin-top: 30px;
+}
+
+#list a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 650;
+    text-shadow: 1px 1px 2px black;
+}
+
+#list a:hover{
+    color: rgb(131, 127, 127);
+}
+
+/*----------------------------------------------------
+                HEADER CONTENT
+-----------------------------------------------------*/
+.headcontent{
+    clear:both;
+    margin-top: 12%;
+    margin-left:17%;
+    text-align: center;
+    padding:20px;
+    width:950px;
+    height:300px;
+}
+
+.headcontent h1{
+    line-height: 80px;
+    text-shadow: 7px 4px 3px black;
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: .2em;
+    animation-name:heading2color;
+    animation-duration: 4s;
+    -o-animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+.headcontent p{
+    text-shadow: 1px 1px 5px black;
+    text-align: center;
+    padding-top:60px;
+    font-weight: bold;
+    color:white;
+    font-size:20px;
+    animation-name:heading2paragraphcolor;
+    animation-duration: 4s;
+   -o-animation-delay: 3s;
+   animation-iteration-count: infinite;
+}
+
+/*----------------------------------------------------
+                ONE PARAGRAPH SECTION
+-----------------------------------------------------*/
+
+#section{
+    background-color: #272727;
+}
+
+#section div:first-child{
+ height:200px;
+ 
+}
+#section h1{
+    font-size: 30px;
+    color: #ccc;
+    margin-left: 40%;
+    position: relative;
+    top:120px;
+    left:10px;
+    text-shadow: 1px 1px 1px black;
+}
+
+#section .div2{
+    width:600px;
+    height:350px;
+    margin-left:30%;
+}
+
+#section p{
+    color: #ccc;
+    line-height: 38px;
+    text-align: center;
+}
+
+/*----------------------------------------------------
+                EAT TOGETHER FIXED IMAGE
+-----------------------------------------------------*/
+
+#fullbackground{
+    height:100vh;
+    background-image: url("../image/fullbackground.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#fullbackground h1:first-child{
+    text-shadow: 7px 4px 3px black;
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: .2em;
+    color:white;
+    padding-top:270px;
+}
+
+#fullbackground p{
+    color:white;
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+    font-size: 20px;
+    margin-top:10px;
+    margin-bottom: 50px;
+} 
+
+#fullbackground a{
+    width:300px;
+    border:3px solid white;
+    border-radius: 25px;
+    font-size: 20px;
+    color:white;
+    letter-spacing: .2em;
+    margin-left:40%;
+    margin-top:50px; 
+    padding:20px;
+    text-decoration: none;
+    text-shadow: 1px 1px 5px black;
+}
+
+#fullbackground a:hover{
+    background-color: white;
+    color:black;
+}
+
+/*----------------------------------------------------
+                3 IMAGES
+-----------------------------------------------------*/
+
+.threeimg{
+    height:700px;
+    background-color: #272727;
+}
+
+.firstimg, .secondimg, .thirdimg{
+    width:400px;
+    height:500px; 
+    background-image: cover;
+    background-repeat: no-repeat; 
+    display:inline-block; 
+    border:1px solid black;
+    border-radius: 25px;
+    opacity: 0.7;
+}
+
+.firstimg{
+    float:left;
+    margin-left:100px;
+    margin-top:80px;    
+}
+
+.secondimg{
+    float:left;
+    margin-left:55px;
+    margin-top:80px;
+}
+
+.thirdimg{
+    float:right;
+    margin-right:100px;
+    margin-top:80px;
+}
+
+/*----------------------------------------------------
+                4 PARAGRAPHS
+-----------------------------------------------------*/
+
+#fourpara{
+ background-color:#272727;
+ height:450px;
+}
+
+.onetwopara, .threefourpara{
+    width:500px;
+    margin-top:40px;
+}
+
+.onetwopara{
+    float:left;
+    margin-left:250px;
+}
+
+.threefourpara{
+    float:right;
+    margin-right:250px;
+}
+
+#fourpara p{
+    padding:20px;
+    font-size:15px;
+    color:#ccc;
+}
+
+/*----------------------------------------------------
+                VIEW MENU
+-----------------------------------------------------*/
+
+#viewmenu{
+    background-color:#272727;
+    height:200px;
+    text-align: center;
+}
+
+#viewmenu a{
+    text-align: center;
+    text-decoration: none;
+    border:1px solid white;
+    border-radius:25px;
+    color:#ccc;
+    padding:20px 40px;
+    text-shadow: 1px 1px 5px black;
+}
+
+#viewmenu a:hover{
+    color:black;
+    background-color: white;
+}
+  
+/*----------------------------------------------------
+               KITCHEN FIXED IMAGE
+-----------------------------------------------------*/
+
+#kitchen{
+    height:100vh;
+    background-image: url(../image/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#kitchen h1{
+    text-shadow: 7px 4px 3px black;
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: .2em;
+    color:white;
+    padding-top:270px;
+}
+
+/*----------------------------------------------------
+                3 PARAGRAPHS
+-----------------------------------------------------*/
+
+#threediv{
+    height:500px;
+    background-color: #272727;
+}
+
+#threediv h2{  
+    font-size: 25px;
+    letter-spacing: .05em;
+    color: #ccc;
+    padding-bottom: 5px;
+}
+
+#threediv h3{
+    margin-top:5px;
+    font-size:15px;
+    letter-spacing: .2em;
+    color: #ccc;;
+    text-shadow:2px 2px 3px #272727;
+}
+
+#threediv p{
+    margin-top:10px;
+    font-size:15px;
+    color:#ccc;
+    text-shadow: 1px 1px 5px black;
+}
+
+.threedivone,.threedivtwo,.threedivthree{
+    width:250px;
+    height:400px;
+    margin-top:100px;
+}
+
+.threedivone{
+    float:left;
+    margin-left:200px;
+}
+
+.threedivtwo{
+    float:left;
+    margin-left:200px;
+}
+
+.threedivthree{
+    float:right;
+    margin-right:200px;
+}
+
+/* ---------------------two image------------------- */
+#twoimg{
+    height:650px;
+    background-color: #272727;
+}
+
+#twoimg img{
+    width:550px;
+    height:500px;
+    opacity:0.7;
+}
+.two-img1{
+    margin-top:30px;
+   margin-left:150px;
+}
+
+.two-img2{
+    margin-top:30px;
+    margin-left:100px;
+}
+
+/* ------------------------------------footer------------------------------ */
+
+footer{
+    height:400px;
+    background-color: rgb(78, 65, 65);
+}
+
+footer h1,p,h3{
+    color:white;
+    letter-spacing: .1em;
+}
+.icon{
+    margin-left:100px;
+    height:50px;
+    padding:20px;
+}
+
+.icon a{
+    padding:15px;
+    font-size: 30px;
+    color:rgb(231, 100, 209)
+}
+
+.location{
+    margin-left:133px;
+}
+
+.location h1:first-child{
+    float:left;
+}
+
+.location h1:last-child{
+    float:right;
+    margin-right:210px;
+}
+
+.paragraphcontent{
+    clear:both;
+}
+
+.paragraphcontent p{
+    width:200px;
+    height:100px;
+    margin-top:50px;
+}
+
+.p1,.p2,.p3{
+    float:left;
+}
+
+.p2,.p3{
+    margin-left:200px;
+}
+.p4{
+    float:right;
+    margin-right: 133px;;
+}
+
+.copyright{
+    margin-top:200px;
+}
+
+.copyright a{
+    color:white;
+}
+
+.copyright a:hover{
+    color:#ccc;
+}
